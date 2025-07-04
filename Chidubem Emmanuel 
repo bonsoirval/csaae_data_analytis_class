@@ -1,0 +1,11 @@
+mysql -u root -p
+show databases;
+ use classicmodels;
+ show tables;
+ desc customers;
+ desc orders;
+ desc orderdetails;
+ select ordernumber, quantityordered from orderdetails order by quantityordered desc limit 3 /* Shows the descending order of the quantity of products*/;
+ select ordernumber, customernumber  from orders where (ordernumber) = 10405 ;
+select customername, customernumber  from customers where (customernumber) = 209;
+/* from the last three lines  gives the quantity and the linkage between the the customer and they quantity*/
